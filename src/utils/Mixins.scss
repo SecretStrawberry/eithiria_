@@ -1,0 +1,11 @@
+@mixin borderRadius {
+  border-radius: 1px;
+}
+
+@mixin borderRadiusBig {
+  border-radius: 3px;
+}
+
+@mixin borderRadiusBiger {
+  border-radius: 10px;
+}

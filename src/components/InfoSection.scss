@@ -1,0 +1,39 @@
+@import "../utils/Colors.scss";
+
+.info-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: $white-darker;
+
+  padding: 10rem 20rem;
+
+  ::selection {
+    background-color: #37434f;
+    color: #e6e6e6;
+  }
+
+  &-text {
+    width: 40%;
+    h2 {
+      color: $grey-4-dark;
+      font-size: 4rem;
+      font-weight: 400;
+    }
+
+    p {
+      margin-top: 1rem;
+
+      font-size: 2.2rem;
+      color: $grey-2-light-darker;
+    }
+  }
+
+  &-img {
+    box-shadow: 2px 2px 2px 0px $grey-2-light-darker;
+  }
+  &-img1 {
+    box-shadow: -2px 1px 2px 0px $grey-2-light-darker;
+  }
+}

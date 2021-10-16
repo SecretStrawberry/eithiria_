@@ -1,0 +1,5 @@
+@import "./utils/Colors.scss";
+.App {
+  background-image: linear-gradient(10deg, $grey-4-dark, $grey-3-dark-lighter);
+  overflow: hidden;
+}

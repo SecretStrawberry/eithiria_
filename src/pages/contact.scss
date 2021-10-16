@@ -1,0 +1,61 @@
+@import "../utils/Colors.scss";
+.contact {
+  background-image: linear-gradient(10deg, $white-darker, $white-light);
+  overflow: hidden;
+}
+
+.contact_request_form {
+  background-color: $white-darker;
+  box-shadow: 1px 1px 8px 1px $grey-3-dark-lighter;
+}
+
+.contact-form-container {
+  position: relative;
+  margin-top: -40rem;
+  ::selection {
+    background-color: #37434f;
+    color: #e6e6e6;
+  }
+}
+
+.contact_form_title {
+  padding: 0;
+  width: 50%;
+  text-align: left;
+  margin-bottom: 1rem;
+
+  & > h2 {
+    margin-bottom: 0;
+    font-size: 4rem;
+    font-weight: 300;
+    color: $white-darker;
+  }
+  & > p {
+    width: 100%;
+    color: $grey-1-light;
+  }
+  ::selection {
+    background-color: #e6e6e6;
+    color: #37434f;
+  }
+}
+
+.contact_header {
+  display: flex;
+  align-items: flex-start;
+  background-image: linear-gradient(10deg, $grey-4-dark, $grey-3-dark-lighter);
+  height: 40rem;
+}
+
+.form_label {
+  color: $grey-4-dark;
+}
+
+.contact_btn {
+  background-color: $grey-3-dark-lighter;
+  color: $white-darker;
+  margin-bottom: 2rem;
+  &:hover {
+    box-shadow: 2px 2px 2px 2px $grey-4-dark;
+  }
+}

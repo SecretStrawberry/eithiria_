@@ -1,0 +1,29 @@
+@import "../utils/Colors.scss";
+
+.footer-nav {
+  ul {
+    display: flex;
+
+    list-style: none;
+
+    font-size: 1.6rem;
+
+    .footer-link {
+      display: inline-block;
+      padding: 1rem 2rem;
+
+      text-decoration: none;
+      &:link,
+      &:visited {
+        color: $white-darker;
+      }
+      &:hover {
+        color: $grey-1-light;
+        transition: color 0.2s;
+      }
+      &:active {
+        color: $red;
+      }
+    }
+  }
+}

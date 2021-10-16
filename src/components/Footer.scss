@@ -1,0 +1,38 @@
+@import "../utils/Colors.scss";
+
+.footer {
+  background-image: linear-gradient(
+    to top right,
+    $grey-4-dark,
+    $grey-3-dark-lighter
+  );
+  ::selection {
+    background-color: #e6e6e6;
+    color: #37434f;
+  }
+}
+
+.upper-container,
+.lower-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 80%;
+  margin: 0 auto;
+
+  padding: 2rem 5rem;
+}
+
+.horizontal-rule {
+  width: 80%;
+  margin: 0 auto;
+  color: $grey-1-light;
+}
+
+.lower-container {
+  p {
+    color: $white-darker;
+    font-size: 2rem;
+  }
+}

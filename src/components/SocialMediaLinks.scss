@@ -1,0 +1,47 @@
+@import "../utils/Colors.scss";
+
+.social_links {
+  display: inline-block;
+  display: flex;
+  list-style: none;
+  li:not(:first-of-type) {
+    padding: 1rem 2rem;
+  }
+  & > li {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+  }
+}
+
+.social-icon {
+  font-size: 2.3rem;
+  color: $white-darker;
+  transition: all 0.2s; // transition for .social-link hover
+}
+
+.social-link {
+  &-icon-facebook {
+    &:hover {
+      color: #4267b2;
+    }
+  }
+  &-icon-twitter {
+    &:hover {
+      color: #1da1f2;
+    }
+  }
+  &-icon-linkedin {
+    &:hover {
+      color: #0077b5;
+    }
+  }
+
+  &-icon-facebook,
+  &-icon-twitter,
+  &-icon-linkedin {
+    &:hover {
+      transform: translateY(-2px) translateX(2px);
+    }
+  }
+}

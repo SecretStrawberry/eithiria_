@@ -1,0 +1,79 @@
+@import "../utils/Colors.scss";
+@import "../utils/Mixins.scss";
+
+.hero {
+  position: relative;
+  padding: 7rem 10rem;
+  color: $white-darker;
+  text-align: center;
+  height: 100vh;
+
+  overflow: hidden;
+
+  ::selection {
+    background-color: #e6e6e6;
+    color: #37434f;
+  }
+
+  & > h1 {
+    font-size: 6rem;
+    font-weight: 300;
+    color: $white-light;
+    margin-bottom: 2rem;
+  }
+
+  .main-navigation-contact {
+    font-size: 1.6rem;
+  }
+
+  &-body {
+    position: relative;
+    margin: 0 auto;
+
+    height: 100%;
+
+    padding: 5rem;
+
+    z-index: 1;
+
+    & > p {
+      width: 40%;
+      margin: 0 auto;
+
+      margin-bottom: 20rem;
+
+      font-size: 2.2rem;
+      font-weight: 400;
+      color: $white-light;
+
+      z-index: 1;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      background-image: linear-gradient(
+          to top,
+          rgba(#000, 0),
+          rgba(#000, 0),
+          rgba(#000, 0),
+          rgba(#000, 0.8)
+        ),
+        url("../images/jump.jpg");
+
+      background-position: center;
+      background-size: cover;
+
+      background-repeat: no-repeat;
+
+      opacity: 0.5;
+      filter: grayscale(0);
+      z-index: -1;
+    }
+  }
+}

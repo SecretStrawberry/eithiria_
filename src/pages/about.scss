@@ -1,0 +1,219 @@
+@import "../utils/Colors.scss";
+@import "../utils/Mixins.scss";
+
+.about_header {
+  display: flex;
+  align-items: flex-start;
+  background-image: linear-gradient(10deg, $grey-4-dark, $grey-3-dark-lighter);
+  height: 40rem;
+}
+
+.about-content {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+
+  color: $grey-3-dark-lighter;
+}
+
+.about-hero {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: -25rem;
+
+  &-title {
+    ::selection {
+      background-color: #e6e6e6;
+      color: #37434f;
+    }
+  }
+
+  &-content {
+    ::selection {
+      background-color: #37434f;
+      color: #e6e6e6;
+    }
+  }
+
+  &-title {
+    color: $white-darker;
+    margin-bottom: 2rem;
+    & > h1 {
+      font-size: 4rem;
+      font-weight: 300;
+    }
+    & > p {
+      font-size: 2rem;
+      color: $grey-1-light;
+    }
+  }
+
+  &-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: $white-darker;
+    padding: 2rem 4rem;
+
+    box-shadow: 1px 1px 10px 1px $grey-3-dark-lighter;
+
+    & > p {
+      font-size: 2rem;
+      width: 50rem;
+    }
+  }
+}
+
+.card-container {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+
+  width: 70%;
+
+  margin: 0% auto;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+
+  &-flip {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    width: 30rem;
+    height: 40rem;
+
+    &:hover {
+      .card-container-card {
+        transform: rotateY(180deg);
+      }
+    }
+    &:hover .card-container-card-backside {
+      transform: rotateY(0deg);
+    }
+  }
+
+  &-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    width: 30rem;
+    height: 40rem;
+
+    box-shadow: 1px 1px 8px 1px $grey-3-dark-lighter;
+
+    backface-visibility: hidden;
+
+    transition: all 0.8s ease;
+
+    ::selection {
+      background-color: #37434f;
+      color: #e6e6e6;
+    }
+
+    & > h2 {
+      display: inline-block;
+      background-color: $white-darker;
+      padding: 1rem 2rem;
+      font-size: 2rem;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      filter: grayscale(1);
+
+      z-index: -1;
+    }
+
+    &--card1::before {
+      background-image: url("../images/horia.jpg");
+    }
+    &--card2::before {
+      background-image: url("../images/mihai.jpeg");
+    }
+
+    &-backside {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      transform: rotateY(-180deg);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      width: 30rem;
+      height: 40rem;
+
+      padding: 1rem 2rem;
+
+      background-color: $white-darker;
+
+      box-shadow: 1px 1px 8px 1px $grey-3-dark-lighter;
+
+      backface-visibility: hidden;
+
+      transition: all 0.8s ease;
+
+      ::selection {
+        background-color: #37434f;
+        color: #e6e6e6;
+      }
+
+      &-title {
+        & > h2 {
+          font-size: 2rem;
+        }
+        & > p {
+          font-size: 1.6rem;
+        }
+      }
+
+      & > p:last-of-type {
+        font-size: 1.8rem;
+        padding: 1rem 2rem;
+      }
+    }
+  }
+
+  &-card-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+
+    font-size: 1.6rem;
+
+    &:link,
+    &:visited,
+    &:active {
+      color: $grey-4-dark;
+    }
+  }
+}
+
+.icon_card {
+  color: $grey-3-dark-lighter;
+}
