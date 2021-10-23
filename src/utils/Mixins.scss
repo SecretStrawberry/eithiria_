@@ -1,3 +1,5 @@
+@import "./Colors.scss";
+
 @mixin borderRadius {
   border-radius: 1px;
 }
@@ -8,4 +10,8 @@
 
 @mixin borderRadiusBiger {
   border-radius: 10px;
+}
+
+@mixin boxShadowLight {
+  box-shadow: rgba($grey-4-dark, 0.2) 0px 8px 24px;
 }

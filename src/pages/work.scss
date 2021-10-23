@@ -9,6 +9,11 @@
     width: 60%;
     margin: 0 auto;
     margin-bottom: 3rem;
+
+    @media only screen and (max-width: 1000px) {
+      width: 80%;
+    }
+
     ::selection {
       background-color: #e6e6e6;
       color: #37434f;
@@ -28,20 +33,32 @@
   display: flex;
 
   width: 60%;
-  height: 50vh;
+
   margin: 0 auto;
   margin-bottom: 5rem;
 
   padding: 3rem 0;
 
   background-color: $white-darker;
-  box-shadow: 1px 1px 2px 1px $grey-3-dark-lighter;
+  @include boxShadowLight;
 
   overflow: hidden;
+
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column;
+
+    width: 80%;
+  }
 
   ::selection {
     background-color: #37434f;
     color: #e6e6e6;
+  }
+  &-text {
+    width: 50%;
+    @media only screen and (max-width: 1000px) {
+      width: 100%;
+    }
   }
 
   &-title {
@@ -57,7 +74,7 @@
 
   &-paragraphs {
     padding: 1rem 2rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: $grey-3-dark-lighter;
   }
 
@@ -65,17 +82,19 @@
     width: 60%;
     overflow: hidden;
     transition: all 0.5s ease-in-out;
+    @media only screen and (max-width: 1000px) {
+      width: 90%;
+      margin: 0 auto;
+    }
     &-actualImage {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: 0 20%;
     }
     &-actualImage-2 {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: 85% 20%;
     }
 
     &:hover {

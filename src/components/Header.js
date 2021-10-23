@@ -1,5 +1,7 @@
 import React from "react";
 import Navigation from "./Navigation";
+import MobileNav from "./MobileNav";
+
 import "./Header.scss";
 import { Link } from "react-router-dom";
 // import logo from "../images/logoEithiria1.png";
@@ -9,6 +11,7 @@ import { Link } from "react-router-dom";
 // import logo5 from "../images/logoEithiria5.png";
 // import logo6 from "../images/logoEithiria6.png";
 import logo from "../images/logo-v1.png";
+import { Breakpoint } from "react-socks";
 
 function Header(props) {
   return (
@@ -19,7 +22,13 @@ function Header(props) {
         <img src={logo} alt="Eithiria logo" className="logo" />
       </Link>
 
-      <Navigation />
+      <Breakpoint customQuery="(min-width: 1001px)">
+        <Navigation />
+      </Breakpoint>
+
+      <Breakpoint customQuery="(max-width: 1000px)">
+        <MobileNav />
+      </Breakpoint>
     </header>
   );
 }

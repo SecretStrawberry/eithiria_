@@ -9,31 +9,30 @@ function Navigation() {
   // NEED TO MAKE A FUNCTION FOR ONCLICK
   ///////////////////////////
 
+  // check dropdown
+
   return (
-    <nav className="main-navigation">
-      <ul>
-        <li>
-          <NavLink className="main-navigation-link" to="/work">
-            WORK
-          </NavLink>
-        </li>
-        <li>
-          <NavLink className="main-navigation-link" to="/jobs">
-            JOBS
-          </NavLink>
-        </li>
-        <li>
-          <NavLink className="main-navigation-link" to="/about">
-            ABOUT
-          </NavLink>
-        </li>
-        <li>
-          <Link className="main-navigation-contact" to="/contact">
-            CONTACT
-          </Link>
-        </li>
-      </ul>
-    </nav>
+    <>
+      <nav className="main-navigation">
+        <ul>
+          <li>
+            <NavLink className="main-navigation-link" to="/work">
+              WORK
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="main-navigation-link" to="/about">
+              ABOUT
+            </NavLink>
+          </li>
+          <li>
+            <Link className="main-navigation-contact" to="/contact">
+              CONTACT
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </>
   );
 }
 

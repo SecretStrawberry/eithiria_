@@ -7,7 +7,7 @@ function InfoSection1() {
   return (
     <>
       <Fade bottom>
-        <section className="info-section">
+        <section className="info-section info-section-media">
           <img
             src={design}
             alt="responsive design"

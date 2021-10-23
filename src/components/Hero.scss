@@ -10,6 +10,13 @@
 
   overflow: hidden;
 
+  @media only screen and (max-width: 800px) {
+    height: 100%;
+  }
+  @media only screen and (max-width: 700px) {
+    padding: 0;
+  }
+
   ::selection {
     background-color: #e6e6e6;
     color: #37434f;
@@ -20,6 +27,17 @@
     font-weight: 300;
     color: $white-light;
     margin-bottom: 2rem;
+
+    @media only screen and (max-width: 1000px) {
+      font-size: 5rem;
+    }
+
+    @media only screen and (max-width: 450px) {
+      font-size: 4rem;
+    }
+    @media only screen and (max-width: 500px) {
+      padding: 1rem;
+    }
   }
 
   .main-navigation-contact {
@@ -36,6 +54,10 @@
 
     z-index: 1;
 
+    @media only screen and (max-width: 500px) {
+      padding: 4rem;
+    }
+
     & > p {
       width: 40%;
       margin: 0 auto;
@@ -47,6 +69,23 @@
       color: $white-light;
 
       z-index: 1;
+      @media only screen and (max-width: 1600px) {
+        width: 60%;
+      }
+
+      @media only screen and (max-width: 1400px) {
+        width: 50%;
+      }
+      @media only screen and (max-width: 1000px) {
+        width: 60%;
+      }
+
+      @media only screen and (max-width: 700px) {
+        width: 80%;
+      }
+      @media only screen and (max-width: 500px) {
+        width: 100%;
+      }
     }
 
     &::before {
@@ -74,6 +113,15 @@
       opacity: 0.5;
       filter: grayscale(0);
       z-index: -1;
+
+      @media only screen and (max-width: 1000px) {
+        background-image: linear-gradient(
+            to top,
+            rgba(#000, 0),
+            rgba(#000, 0.8)
+          ),
+          url("../images/jump.jpg");
+      }
     }
   }
 }

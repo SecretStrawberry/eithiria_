@@ -1,11 +1,11 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
+import { Breakpoint } from "react-socks";
 
 import "./about.scss";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import SocialMediaLinks from "../components/SocialMediaLinks";
+import PeopleCards from "../components/PeopleCards";
 
 import responsive from "../images/resposive_design.svg";
 
@@ -33,61 +33,43 @@ function About() {
                 to win over customers.
               </p>
 
-              <img src={responsive} alt="responsive design" width={"500px"} />
+              <img
+                src={responsive}
+                alt="responsive design"
+                className="about-hero-content-img"
+              />
             </div>
           </div>
-
+        </Fade>
+        <Fade bottom>
           <div className="card-container">
-            <div className="card-container-flip">
-              <div className="card-container-card card-container-card--card1">
-                <h2>Horia Surdu</h2>
-              </div>
-              <div className="card-container-card-backside">
-                <div className="card-container-card-backside-title">
-                  <h2>Horia Surdu</h2>
-                  <p>CEO, Designer and developer</p>
-                </div>
-                <p>
-                  I am a self tought web developer and web designer. I build
-                  websites with passion, this gives me the power to provide
-                  exceptional experiences for you and your customers.
-                </p>
-                <div className="card-container-contact">
-                  <Link to="#" className="card-container-card-link">
-                    horia@eithiria.com
-                  </Link>
-                  <SocialMediaLinks className_socialIcon="icon_card" />
-                </div>
-              </div>
-            </div>
-            <div className="card-container-flip">
-              <div className="card-container-card card-container-card--card2">
-                <h2>Mihai Musat</h2>
-              </div>
-              <div className="card-container-card-backside">
-                <div className="card-container-card-backside-title">
-                  <h2>Mihai Musat</h2>
-                  <p>CEO, Technology Recruiting Specialist and designer</p>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Illum, repudiandae quasi velit dicta odit, ea, ratione
-                  blanditiis sit quia aut quos atque esse maxime possimus
-                  voluptatibus porro sed cumque tempore?
-                </p>
-                <div className="card-container-contact">
-                  <Link to="#" className="card-container-card-link">
-                    mihai@eithiria.com
-                  </Link>
-                  <SocialMediaLinks className_socialIcon="icon_card" />
-                </div>
-              </div>
-            </div>
+            <PeopleCards
+              frontTitle="Horia Surdu"
+              backsideTitle="Horia Surdu"
+              backsideSubtitle="CEO, Designer and developer"
+              backsideParagraph="I am a self tought web developer and web designer. I build websites
+          with passion, this gives me the power to provide exceptional
+          experiences for you and your customers."
+              backsideEmail="horia@eithiria.com"
+              card_image="horia-image"
+            />
+            <PeopleCards
+              frontTitle="Miahi Musat"
+              backsideTitle="Miahi Musat"
+              backsideSubtitle="CEO, Designer and developer"
+              backsideParagraph="I am a self tought web developer and web designer. I build websites
+          with passion, this gives me the power to provide exceptional
+          experiences for you and your customers."
+              backsideEmail="mihai@eithiria.com"
+              card_image="mihai-image"
+            />
           </div>
         </Fade>
       </div>
       <Fade bottom>
-        <Footer />
+        <Breakpoint customQuery="(min-width: 1000px)">
+          <Footer />
+        </Breakpoint>
       </Fade>
     </div>
   );

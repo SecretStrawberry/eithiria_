@@ -1,4 +1,6 @@
 @import "../utils/Colors.scss";
+@import "../utils/Mixins.scss";
+
 .contact {
   background-image: linear-gradient(10deg, $white-darker, $white-light);
   overflow: hidden;
@@ -6,15 +8,21 @@
 
 .contact_request_form {
   background-color: $white-darker;
-  box-shadow: 1px 1px 8px 1px $grey-3-dark-lighter;
+  @include boxShadowLight;
+  padding: 1rem 2rem;
 }
 
 .contact-form-container {
   position: relative;
   margin-top: -40rem;
+
   ::selection {
     background-color: #37434f;
     color: #e6e6e6;
+  }
+
+  @media only screen and (max-width: 600px) {
+    margin-top: -29rem;
   }
 }
 
@@ -22,6 +30,7 @@
   padding: 0;
   width: 50%;
   text-align: left;
+
   margin-bottom: 1rem;
 
   & > h2 {
@@ -38,6 +47,10 @@
     background-color: #e6e6e6;
     color: #37434f;
   }
+
+  @media only screen and (max-width: 600px) {
+    width: 90%;
+  }
 }
 
 .contact_header {
@@ -52,8 +65,9 @@
 }
 
 .contact_btn {
-  background-color: $grey-3-dark-lighter;
-  color: $white-darker;
+  background-color: $white-darker;
+  border: 1px solid $grey-1-light;
+  color: $red;
   margin-bottom: 2rem;
   &:hover {
     box-shadow: 2px 2px 2px 2px $grey-4-dark;

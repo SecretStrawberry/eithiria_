@@ -21,7 +21,7 @@ function InfoSection() {
           <img
             src={design}
             alt="responsive design"
-            width={"45%"}
+            // width={"45%"}
             className="info-section-img"
           />
         </section>

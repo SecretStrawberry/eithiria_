@@ -1,16 +1,12 @@
 @import "../utils/Colors.scss";
 
 .social_links {
-  display: inline-block;
   display: flex;
   list-style: none;
-  li:not(:first-of-type) {
-    padding: 1rem 2rem;
-  }
+  width: fit-content;
+
   & > li {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-right: 2rem;
+    padding: 1rem 2rem;
   }
 }
 

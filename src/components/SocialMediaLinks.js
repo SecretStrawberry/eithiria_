@@ -9,7 +9,7 @@ import "./SocialMediaLinks.scss";
 function SocialMediaLinks(props) {
   return (
     <>
-      <ul className="social_links">
+      <ul className={`social_links ${props.className_contactLink_pos}`}>
         <li>
           <Link to="#" className="social-link">
             <ImFacebook

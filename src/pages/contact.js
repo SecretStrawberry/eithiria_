@@ -3,6 +3,9 @@ import "./contact.scss";
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+
+import { Breakpoint } from "react-socks";
+
 import RequestSiteForm from "../components/RequestSiteForm";
 import ContactSection from "../components/ContactSection";
 
@@ -26,7 +29,9 @@ function Contact() {
         />
 
         <ContactSection />
-        <Footer />
+        <Breakpoint customQuery="(min-width: 1000px)">
+          <Footer />
+        </Breakpoint>
       </Fade>
     </div>
   );

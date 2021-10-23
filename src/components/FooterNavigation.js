@@ -12,18 +12,8 @@ function FooterNavigation() {
           </Link>
         </li>
         <li>
-          <Link to="#" className="footer-link">
-            Jobs
-          </Link>
-        </li>
-        <li>
           <Link to="/about" className="footer-link">
             About
-          </Link>
-        </li>
-        <li>
-          <Link to="#" className="footer-link">
-            Blog
           </Link>
         </li>
         <li>
