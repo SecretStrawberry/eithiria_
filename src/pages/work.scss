@@ -49,6 +49,9 @@
 
     width: 80%;
   }
+  @media only screen and (max-width: 400px) {
+    width: 92%;
+  }
 
   ::selection {
     background-color: #37434f;
@@ -76,6 +79,9 @@
     padding: 1rem 2rem;
     font-size: 1.8rem;
     color: $grey-3-dark-lighter;
+    @media only screen and (max-width: 400px) {
+      font-size: 2rem;
+    }
   }
 
   &-image {
