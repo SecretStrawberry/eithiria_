@@ -4,12 +4,7 @@ import MobileNav from "./MobileNav";
 
 import "./Header.scss";
 import { Link } from "react-router-dom";
-// import logo from "../images/logoEithiria1.png";
-// import logo2 from "../images/logoEithiria2.png";
-// import logo3 from "../images/logoEithiria3.png";
-// import logo4 from "../images/logoEithiria4.png";
-// import logo5 from "../images/logoEithiria5.png";
-// import logo6 from "../images/logoEithiria6.png";
+
 import logo from "../images/logo-v1.png";
 import { Breakpoint } from "react-socks";
 

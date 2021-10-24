@@ -45,6 +45,7 @@ function About() {
           <div className="card-container">
             <PeopleCards
               frontTitle="Horia Surdu"
+              frontSubtitle="Web designer & developer"
               backsideTitle="Horia Surdu"
               backsideSubtitle="CEO, Designer and developer"
               backsideParagraph="I am a self tought web developer and web designer. I build websites
@@ -54,8 +55,9 @@ function About() {
               card_image="horia-image"
             />
             <PeopleCards
-              frontTitle="Miahi Musat"
-              backsideTitle="Miahi Musat"
+              frontTitle="Mihai Musat"
+              frontSubtitle="HR specialist & web designer"
+              backsideTitle="Mihai Musat"
               backsideSubtitle="CEO, Designer and developer"
               backsideParagraph="I am a self tought web developer and web designer. I build websites
           with passion, this gives me the power to provide exceptional

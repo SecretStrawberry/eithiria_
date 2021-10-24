@@ -55,9 +55,12 @@
 
   & > h2 {
     display: inline-block;
-    background-color: $white-darker;
+    color: $white-darker;
     padding: 1rem 2rem;
     font-size: 2rem;
+    & > span {
+      font-size: 1.4rem;
+    }
   }
 
   &::before {
@@ -78,12 +81,26 @@
   }
   &-horia-image {
     &::before {
-      background-image: $horia-backgroudImage;
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 0.5)
+        ),
+        $horia-backgroudImage;
     }
   }
   &-mihai-image {
     &::before {
-      background-image: $mihai-backgroudImage;
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 0.5)
+        ),
+        $mihai-backgroudImage;
     }
   }
 }

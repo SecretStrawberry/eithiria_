@@ -9,12 +9,12 @@
 
   display: flex;
   justify-content: space-between;
+  align-content: center;
 
   padding: 2rem 20rem;
 
   @media only screen and (max-width: 1000px) {
     padding: 2rem 4rem;
-    height: 20rem;
   }
 
   ::selection {
@@ -42,9 +42,17 @@
 }
 
 .logo {
-  width: 18rem;
+  width: 50%;
   transition: all 0.2s;
   &:hover {
     transform: rotate(10deg);
+  }
+
+  @media only screen and (max-width: 1400px) {
+    width: 40%;
+  }
+  @media only screen and (max-width: 1000px) {
+    pointer-events: none;
+    width: 30%;
   }
 }

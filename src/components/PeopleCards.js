@@ -9,7 +9,10 @@ function PeopleCards(props) {
   return (
     <div className="card-container-flip">
       <div className={`card-front card-front-${props.card_image}`}>
-        <h2>{props.frontTitle}</h2>
+        <h2>
+          {props.frontTitle} <br />
+          <span>{props.frontSubtitle}</span>
+        </h2>
       </div>
       <div className="card-backside">
         <div className="card-backside-title">
