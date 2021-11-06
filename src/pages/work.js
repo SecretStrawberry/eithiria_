@@ -8,8 +8,11 @@ import PortofolioCard from "../components/ProtofolioCard";
 import Fade from "react-reveal/Fade";
 
 import "./work.scss";
+
 import secretStrawberry from "../images/SecretStrawberry.png";
 import jerigah from "../images/jerigha.png";
+import mobileSecretStrawberry from "../images/strawberryPhone.png";
+
 import { Breakpoint, BreakpointProvider } from "react-socks";
 
 function Work() {
@@ -33,6 +36,7 @@ function Work() {
               textBody_p4="This page is developed with HTML5, CSS, and JavaScript only.
                            No frameworks were used during the making of this product."
               image={secretStrawberry}
+              mobileImage={mobileSecretStrawberry}
             />
           </Fade>
           <Fade bottom>

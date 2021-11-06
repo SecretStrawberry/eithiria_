@@ -2,8 +2,6 @@ import React from "react";
 
 import "./PortofolioCard.scss";
 
-import mobile from "../images/strawberryPhone.png";
-
 function PortofolioCard(props) {
   return (
     <a
@@ -34,7 +32,7 @@ function PortofolioCard(props) {
         <div
           class={`portofolio_card-responsive-image ${props.className_cardImageResponsive}`}
         >
-          <img src={mobile} alt="strawberry mobile" />
+          <img src={props.mobileImage} alt="strawberry mobile" />
         </div>
       </div>
     </a>
