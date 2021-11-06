@@ -15,10 +15,15 @@ function InfoSection1() {
             className="info-section-img1"
           />
           <div className="info-section-text">
-            <h2>Easy deployment solutions</h2>
+            <h2>
+              We offer deployment guidance
+              {/* Easy deployment solutions */}
+            </h2>
             <p>
-              We offer a variety of hosting solutions, that perfectly match your
-              website needs.
+              We can guide you to a variety of hosting solutions, that perfectly
+              match your website needs.
+              {/* We offer a variety of hosting solutions, that perfectly match your
+              website needs. */}
             </p>
           </div>
         </section>

@@ -11,11 +11,16 @@ function SocialMediaLinks(props) {
     <>
       <ul className={`social_links ${props.className_contactLink_pos}`}>
         <li>
-          <Link to="#" className="social-link">
+          <a
+            href="https://www.facebook.com/Eithiria/"
+            rel="noreferrer"
+            target="_blank"
+            className="social-link"
+          >
             <ImFacebook
               className={`social-icon social-link-icon-facebook ${props.className_socialIcon}`}
             />
-          </Link>
+          </a>
         </li>
         <li>
           <Link to="#" className="social-link">

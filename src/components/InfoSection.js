@@ -11,10 +11,10 @@ function InfoSection() {
           <div className="info-section-text">
             <h2>Your website done the right way</h2>
             <p>
-              Wheter you are starting from scrach or redoing an existing site,
+              Whether you are starting from scratch or redoing an existing site,
               we will not cut corners or use generic templates. We will design
-              your website with great user experience that takes your brand and
-              business to the next level.
+              your website with a great user experience that takes your brand
+              and business to the next level.
             </p>
           </div>
 

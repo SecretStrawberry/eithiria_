@@ -6,6 +6,7 @@ import "./about.scss";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PeopleCards from "../components/PeopleCards";
+import CallToAction from "../components/CallToAction";
 
 import responsive from "../images/resposive_design.svg";
 
@@ -19,16 +20,16 @@ function About() {
         <Fade bottom>
           <div className="about-hero">
             <div className="about-hero-title">
-              <h1>Your dream transformers</h1>
+              <h1>Our web developers</h1>
               <p>
-                We are small in number, but our dedication is absolute and
+                We are small in number, but our dedication is absolute and our
                 expertise is vast.
               </p>
             </div>
             <div className="about-hero-content">
               <p>
                 Just great websites that work. Every business needs a quality
-                web presence that doesn't need to be flamboiant or extravagant,
+                web presence that doesn't need to be flamboyant or extravagant,
                 just well built and written to carry out its intended purpose:
                 to win over customers.
               </p>
@@ -69,6 +70,7 @@ function About() {
         </Fade>
       </div>
       <Fade bottom>
+        <CallToAction />
         <Breakpoint customQuery="(min-width: 1000px)">
           <Footer />
         </Breakpoint>

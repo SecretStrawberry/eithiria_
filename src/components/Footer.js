@@ -21,7 +21,7 @@ function Footer() {
       <hr className="horizontal-rule" />
       <div className="lower-container">
         <SocialMediaLinks />
-        <p>We are on the Web. A totally online company.</p>
+        <p>We are on the Web. An online company.</p>
       </div>
     </footer>
   );

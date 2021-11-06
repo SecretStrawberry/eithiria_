@@ -3,10 +3,12 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CallToAction from "../components/CallToAction";
 
+import PortofolioCard from "../components/ProtofolioCard";
+
 import Fade from "react-reveal/Fade";
 
 import "./work.scss";
-import strawberry from "../images/SecretStrawberry.png";
+import secretStrawberry from "../images/SecretStrawberry.png";
 import jerigah from "../images/jerigha.png";
 import { Breakpoint, BreakpointProvider } from "react-socks";
 
@@ -22,91 +24,34 @@ function Work() {
               <h1>Our design work</h1>
               <p>Just a few of our creations</p>
             </div>
-            <div className="work-content-card work-content-card--card1">
-              <div className="work-content-card-text">
-                <div className="work-content-card-title">
-                  <h2>SecretStrawberry</h2>
-                  <p>Presentation page</p>
-                </div>
-                <div className="work-content-card-paragraphs">
-                  <p>
-                    We created here a presentation page for a freelancer web
-                    developer.
-                  </p>
-                  <br />
-                  <p>The freelancer is me , so I made this page for myself.</p>
-                  <br />
-                  <p>
-                    I made a clean and modern Page, easy to read and to
-                    understand, with some nice animations.
-                  </p>
-                  <br />
-                  <p>
-                    This page is developed with HTML5, CSS and JavaScript only.
-                    No frameworks where used during making of this product.
-                  </p>
-                </div>
-              </div>
-              <div className="work-content-card-image">
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://secretstrawberry.com/"
-                >
-                  <img
-                    src={strawberry}
-                    alt="site presentation"
-                    className="work-content-card-image-actualImage"
-                  />
-                </a>
-              </div>
-            </div>
+            <PortofolioCard
+              cardTitle="SecretStrawberry"
+              cardTitleParagraph="Presentation page"
+              textBody_p1="We created here a presentation page for a freelancer web developer."
+              textBody_p2="The freelancer is me, so I made this page for myself."
+              textBody_p3="I made a clean and modern Page, easy to read and to understand, with some nice animations."
+              textBody_p4="This page is developed with HTML5, CSS, and JavaScript only.
+                           No frameworks were used during the making of this product."
+              image={secretStrawberry}
+            />
           </Fade>
-          {/* /////////////////////////////////////card 2 /////////////////////////////////////////// */}
           <Fade bottom>
-            <div className="work-content-card work-content-card--card1">
-              <div className="work-content-card-text">
-                <div className="work-content-card-title">
-                  <h2>Jerigah Chronicles</h2>
-                  <p>Game presentation page</p>
-                </div>
-                <div className="work-content-card-paragraphs">
-                  <p>
-                    A new game developer want to share hes new creation. So we
-                    made for him the presentation page that make his game come
-                    forward.
-                  </p>
-                  <br />
-                  <p>
-                    Clean and undestandeble design, colors that represent the
-                    game and smooth animations.
-                  </p>
-                  <br />
-                  <p>
-                    Attractive navigation gives the impression that your actualy
-                    in the game menu.
-                  </p>
-                  <br />
-                  <p>
-                    The characthers are present here to give the user a deeper
-                    undestanding of the game.
-                  </p>
-                </div>
-              </div>
-              <div className="work-content-card-image">
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://jerigah.netlify.app/"
-                >
-                  <img
-                    src={jerigah}
-                    alt="site presentation"
-                    className="work-content-card-image-actualImage-2"
-                  />
-                </a>
-              </div>
-            </div>
+            <PortofolioCard
+              className_portofolioCardRight="card_right"
+              className_cardText="right_card_text"
+              className_cardImage="right_card_image"
+              className_cardImageResponsive="responsive_image_right"
+              cardTitle="Jerigah Chronicles"
+              cardTitleParagraph="Concept game presentation page"
+              textBody_p1="A new game developer wants to share his new creation.
+                           So we made for him the presentation page that make his game come forward."
+              textBody_p2="Clean and understandable design, colors that represent the game, and smooth animations."
+              textBody_p3="Attractive navigation gives the impression that you are
+                           actually in the game menu."
+              textBody_p4="The characters are present here to give the user a deeper
+                           understanding of the game."
+              image={jerigah}
+            />
           </Fade>
         </section>
         <Fade bottom>

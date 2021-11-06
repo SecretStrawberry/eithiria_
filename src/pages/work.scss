@@ -4,6 +4,7 @@
 .work-content {
   position: relative;
   margin-top: -25rem;
+
   &-title {
     color: $white-darker;
     width: 60%;
@@ -11,6 +12,7 @@
     margin-bottom: 3rem;
 
     @media only screen and (max-width: 1000px) {
+      text-align: center;
       width: 80%;
     }
 
@@ -28,6 +30,7 @@
     & > h1 {
       font-size: 4rem;
       font-weight: 300;
+      font-family: "Merriweather", serif;
     }
     & > p {
       font-size: 2rem;
@@ -80,6 +83,7 @@
     color: $grey-4-dark;
     & > h2 {
       font-size: 3rem;
+      font-family: "Merriweather", serif;
     }
     & > p {
       font-size: 2rem;

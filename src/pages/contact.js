@@ -24,7 +24,7 @@ function Contact() {
           className_form_title="contact_form_title"
           className_label="form_label"
           className_send_message_btn="contact_btn"
-          h2="Contact us"
+          h2="Contact Eithiria web design agency"
           p1="If you are ready to have your website done, just use the form below to get things going."
         />
 

@@ -10,7 +10,7 @@ function CallToAction() {
         <div className="call-to-action-title">
           <h1>Are you ready to start your new awesome site?</h1>
           <p>
-            Take the first step towards the next chapter of your buisiness and
+            Take the first step towards the next chapter of your business and
             write us a few words about what you do, and we will reach out to get
             your project started.
           </p>

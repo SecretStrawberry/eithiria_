@@ -8,6 +8,7 @@ import RequestSiteForm from "./components/RequestSiteForm";
 import Footer from "./components/Footer";
 
 import Fade from "react-reveal/Fade";
+
 import { Breakpoint, BreakpointProvider } from "react-socks";
 
 function App(props) {
@@ -22,7 +23,7 @@ function App(props) {
         <Fade bottom>
           <RequestSiteForm
             h2="Make your dream come true today"
-            p1="Are you ready for you new website?"
+            p1="Are you ready for your new website?"
             p2="Tell us a little about your business and we will reach out to get
           things going."
           />

@@ -49,7 +49,12 @@
   }
 
   @media only screen and (max-width: 1000px) {
+    text-align: center;
     width: 70%;
+  }
+
+  @media only screen and (max-width: 681px) {
+    width: 80%;
   }
 
   @media only screen and (max-width: 600px) {

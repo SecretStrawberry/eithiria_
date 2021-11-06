@@ -9,10 +9,12 @@ import App from "./App";
 import Contact from "./pages/contact";
 import About from "./pages/about";
 import Work from "./pages/work";
+import ScrollToTop from "./helpers/ScrollToTop";
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/work" element={<Work />} />
