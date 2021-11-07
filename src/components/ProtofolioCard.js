@@ -30,7 +30,7 @@ function PortofolioCard(props) {
           <img src={props.image} alt="Secret Starwberry site" />
         </div>
         <div
-          class={`portofolio_card-responsive-image ${props.className_cardImageResponsive}`}
+          className={`portofolio_card-responsive-image ${props.className_cardImageResponsive}`}
         >
           <img src={props.mobileImage} alt="strawberry mobile" />
         </div>

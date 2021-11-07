@@ -12,6 +12,7 @@ import "./work.scss";
 import secretStrawberry from "../images/SecretStrawberry.png";
 import jerigah from "../images/jerigha.png";
 import mobileSecretStrawberry from "../images/strawberryPhone.png";
+import mobileJerigah from "../images/jerigahPhone.png";
 
 import { Breakpoint, BreakpointProvider } from "react-socks";
 
@@ -55,6 +56,7 @@ function Work() {
               textBody_p4="The characters are present here to give the user a deeper
                            understanding of the game."
               image={jerigah}
+              mobileImage={mobileJerigah}
             />
           </Fade>
         </section>
