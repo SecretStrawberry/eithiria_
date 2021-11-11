@@ -6,6 +6,9 @@ import "./Header.scss";
 import { Link } from "react-router-dom";
 
 import logo from "../images/logo-v1.png";
+// import logo from "../images/logo.svg";
+// import logo from "../images/drawing1.svg";
+
 import { Breakpoint } from "react-socks";
 
 function Header(props) {

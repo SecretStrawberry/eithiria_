@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg807"
+   inkscapeVersion="1.1.1 (3bf5ae0, 2021-09-20)"
+   sodipodiDocname="drawing1.svg"
+   xmlnsInkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlnsSodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlnsSvg="http://www.w3.org/2000/svg">
+  <sodipodiNamedview
+     id="namedview809"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscapePageshadow="2"
+     inkscapePageopacity="0.0"
+     inkscapePagecheckerboard="0"
+     inkscapeDocument-units="mm"
+     showgrid="false"
+     inkscapeZoom="0.63250561"
+     inkscapeCx="396.83442"
+     inkscapeCy="558.88832"
+     inkscapeWindow-width="1848"
+     inkscapeWindow-height="1025"
+     inkscapeWindow-x="72"
+     inkscapeWindow-y="27"
+     inkscapeWindow-maximized="1"
+     inkscapeCurrent-layer="layer1" />
+  <defs
+     id="defs804">
+    <rect
+       x="220.24358"
+       y="339.02866"
+       width="391.62549"
+       height="227.50409"
+       id="rect4399" />
+  </defs>
+  <g
+     inkscapeLabel="Layer 1"
+     inkscapeGroupmode="layer"
+     id="layer1">
+    <text
+       xmlSpace="preserve"
+       transform="scale(0.26458333)"
+       id="text4397"
+       style="fill:black;fill-opacity:1;line-height:1.25;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;white-space:pre;shape-inside:url(#rect4399)" />
+    <text
+       xmlSpace="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="114.94772"
+       y="119.44287"
+       id="text7947"><tspan
+         sodipodiRole="line"
+         id="tspan7945"
+         style="stroke-width:0.264583"
+         x="114.94772"
+         y="119.44287">hello</tspan></text>
+  </g>
+</svg>

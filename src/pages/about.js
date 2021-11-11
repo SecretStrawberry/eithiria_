@@ -57,12 +57,14 @@ function About() {
             />
             <PeopleCards
               frontTitle="Mihai Musat"
-              frontSubtitle="HR specialist & web designer"
+              frontSubtitle="IT Recruitment Partner & web designer"
               backsideTitle="Mihai Musat"
-              backsideSubtitle="CEO, Designer and developer"
-              backsideParagraph="I am a self tought web developer and web designer. I build websites
-          with passion, this gives me the power to provide exceptional
-          experiences for you and your customers."
+              backsideSubtitle="CEO, Designer & IT Recruitment Partner"
+              backsideParagraph="Human Resources Business
+                                 Partner successful at planning business
+                                 strategies, integrating policies and improving 
+                                 performance. Focused on implementing 
+                                 updates to increase employee morale, business efficiency and cost savings."
               backsideEmail="mihai@eithiria.com"
               card_image="mihai-image"
             />
