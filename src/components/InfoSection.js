@@ -1,6 +1,6 @@
 import React from "react";
 import "./InfoSection.scss";
-import design from "../images/resposive_design.svg";
+import design from "../images/pic2.svg";
 import Fade from "react-reveal/Fade";
 
 function InfoSection() {
