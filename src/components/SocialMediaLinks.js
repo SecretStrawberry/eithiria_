@@ -1,8 +1,8 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
-import { ImFacebook, ImTwitter, ImLinkedin2 } from "react-icons/im";
+import { ImFacebook } from "react-icons/im";
 
 import "./SocialMediaLinks.scss";
 
@@ -22,7 +22,7 @@ function SocialMediaLinks(props) {
             />
           </a>
         </li>
-        <li>
+        {/* <li>
           <Link to="#" className="social-link">
             <ImTwitter
               className={`social-icon social-link-icon-twitter ${props.className_socialIcon}`}
@@ -35,7 +35,7 @@ function SocialMediaLinks(props) {
               className={`social-icon social-link-icon-linkedin ${props.className_socialIcon}`}
             />
           </Link>
-        </li>
+        </li> */}
       </ul>
     </>
   );

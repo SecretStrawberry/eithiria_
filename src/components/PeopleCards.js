@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import SocialMediaLinks from "../components/SocialMediaLinks";
+// import SocialMediaLinks from "../components/SocialMediaLinks";
 
 import "./PeopleCards.scss";
 // import peoplePic from "../images/horia.jpg";
@@ -24,7 +24,7 @@ function PeopleCards(props) {
           <Link to="#" className="card-link">
             {props.backsideEmail}
           </Link>
-          <SocialMediaLinks className_socialIcon="icon_card" />
+          {/* <SocialMediaLinks className_socialIcon="icon_card" /> */}
         </div>
       </div>
     </div>

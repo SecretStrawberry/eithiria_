@@ -13,8 +13,8 @@ function ContactSection() {
         </div>
         <hr />
         <div className="contact-section-field-contactData">
-          <p>455 74 975</p>
-          <p>welcome@eithiria.com</p>
+          <p>+47 455 74 975</p>
+          <p>contact@eithiria.com</p>
         </div>
       </div>
       <div className="contact-section-field">

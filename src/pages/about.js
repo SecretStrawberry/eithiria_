@@ -52,7 +52,7 @@ function About() {
               backsideParagraph="I am a self tought web developer and web designer. I build websites
           with passion, this gives me the power to provide exceptional
           experiences for you and your customers."
-              backsideEmail="horia@eithiria.com"
+              backsideEmail="contact@eithiria.com"
               card_image="horia-image"
             />
             <PeopleCards
@@ -65,7 +65,7 @@ function About() {
                                  strategies, integrating policies and improving 
                                  performance. Focused on implementing 
                                  updates to increase employee morale, business efficiency and cost savings."
-              backsideEmail="mihai@eithiria.com"
+              backsideEmail="contact@eithiria.com"
               card_image="mihai-image"
             />
           </div>
