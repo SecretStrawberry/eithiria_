@@ -5,7 +5,7 @@ import "./PortofolioCard.scss";
 function PortofolioCard(props) {
   return (
     <a
-      href="https://secretstrawberry.netlify.app/"
+      href={props.portofolioLink}
       target="_blank"
       rel="noreferrer"
       className="portofolioLink"

@@ -4,7 +4,7 @@ import "../pages/contact.scss";
 import React, { useState } from "react";
 import emailjs, { init } from "emailjs-com";
 
-init("user_3pBv1IVuUiDKDGZtgO456");
+init("xxxxxxxxxxx");
 
 function RequestSiteForm(props) {
   const [name, setName] = useState("");
@@ -45,9 +45,9 @@ function RequestSiteForm(props) {
     e.preventDefault();
 
     if (name && email && phone && message && isValidEmail(email)) {
-      const serviceId = "service_q6b806s";
-      const templateId = "template_yw5g7qj";
-      const userId = "user_3pBv1IVuUiDKDGZtgO456";
+      const serviceId = "xxxxxxxxxxx";
+      const templateId = "xxxxxxxxxxxxx";
+      const userId = "xxxxxxxxxxxx";
       const templateParams = {
         name,
         email,

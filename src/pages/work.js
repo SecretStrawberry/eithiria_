@@ -29,6 +29,7 @@ function Work() {
               <p>Just a few of our creations</p>
             </div>
             <PortofolioCard
+              portofolioLink="https://secretstrawberry.com/"
               cardTitle="SecretStrawberry"
               cardTitleParagraph="Presentation page"
               textBody_p1="We created here a presentation page for a freelancer web developer."
@@ -42,6 +43,7 @@ function Work() {
           </Fade>
           <Fade bottom>
             <PortofolioCard
+              portofolioLink="https://jerigah.netlify.app/"
               className_portofolioCardRight="card_right"
               className_cardText="right_card_text"
               className_cardImage="right_card_image"
